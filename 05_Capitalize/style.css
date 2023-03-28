@@ -1,0 +1,52 @@
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a4eb8b;
+}
+.container {
+    height: 295px;
+    width: 402px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: aquamarine;
+    border-radius: 39px;
+    border: 5px solid #8888;
+}
+label{
+    font-family: cursive;
+    font-size: larger;
+    font-weight: 600;
+}
+
+#textBox{
+    padding: 10px;
+    border-radius: 19px;
+    outline: none;
+    border: none;
+    
+}
+
+#btn{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #2bbc8c;
+    color: azure;
+    font-weight: 600;
+}
+#btn:hover{
+    background-color: azure;
+    color: black;
+}
+
+#output{
+    font-family: cursive;
+    font-size: larger;
+    font-weight: 600;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Page</title>
+	<script>
+		function validateForm() {
+			var email = document.forms["myForm"]["email"].value;
+			var password = document.forms["myForm"]["password"].value;
+			var error = document.getElementById("error");
+			if (email.indexOf("@") == -1 || password.length < 8) {
+				error.innerHTML = "Invalid email or password!";
+				error.style.color = "red";
+				return false;
+			} else {
+				error.innerHTML = "Valid email and password!";
+				error.style.color = "green";
+				return true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="myForm" onsubmit="return validateForm()">
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email"><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<p id="error"></p>
+</body>
+</html>
